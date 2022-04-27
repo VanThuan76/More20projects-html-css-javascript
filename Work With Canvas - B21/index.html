@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script type="module" defer src="app.js"></script>
+    <title>Paint Tool</title>
+  </head>
+  <body>
+    <div class="tools-paint">
+      <ul>
+        <li id="tool" class="pencil">
+          <box-icon type="solid" name="pencil"></box-icon>
+        </li>
+        <li id="tool" class="eraser">
+          <box-icon type="solid" name="eraser"></box-icon>
+        </li>
+      </ul>
+    </div>
+    <div class="info-paint">
+      <div class="color-paint">
+        <div class="head-color">
+          <p>Colors</p>
+          <box-icon type="solid" name="up-arrow"></box-icon>
+        </div>
+        <div class="body-color">
+          <input id="color" type="color" />
+        </div>
+      </div>
+      <div class="preview-paint"></div>
+      <div class="infomation-paint">
+        <div class="head-infomation">
+          <p>Information</p>
+          <box-icon type="solid" name="up-arrow"></box-icon>
+        </div>
+        <div class="body-infomation"></div>
+      </div>
+    </div>
+    <div class="header-paint">
+      <ul>
+        <li class="file">
+          <p>File</p>
+        </li>
+        <li>
+          <p>Edit</p>
+        </li>
+        <li class="image-head">
+          <p>Import</p>
+          <input accept="image/png, image/jpeg" type="file" class="input" />
+        </li>
+        <li>
+          <a
+            class="share"
+            href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+            target="_blank"
+            >Share
+          </a>
+        </li>
+        <li class="help">Help</li>
+      </ul>
+    </div>
+    <div class="cover-header-paint--new">
+      <div class="file-paint">
+        <p id="new">New</p>
+        <p id="clear">Clear</p>
+        <p id="save">Save</p>
+        <p id="export">
+          <a download="test.png">Export As</a>
+        </p>
+      </div>
+    </div>
+    <div class="cover-header-paint--edit">
+      <div class="edit-paint">
+        <p id="rotate">Rotate</p>
+      </div>
+    </div>
+    <div class="show-function-tools">
+      <div class="head-show-tool">
+        <box-icon type="solid" name="palette"></box-icon>
+        <h3>Paint Tool</h3>
+      </div>
+      <div class="warning-save">
+        <p>⚠️ No autosave, no cloud storage</p>
+      </div>
+      <div class="func-pencil">
+        <p>Size:</p>
+        <div class="handler-pencil">
+          <button class="decrease">-</button>
+          <p>1</p>
+          <button class="increase">+</button>
+        </div>
+      </div>
+      <div class="func-pencil-other">
+        <p>Opacity:</p>
+        <input class="opacity" type="range" min="1" max="100" value="100" />
+      </div>
+    </div>
+    <canvas id="canvas" width="1587px" height="977px"></canvas>
+    <div class="wrap-newCanvas"></div>
+    <div class="contain-newCanvas">
+      <h1>New Image</h1>
+      <div class="select-newCanvas">
+        <button id="current">Current</button>
+        <button id="square">Square</button>
+        <button id="landscape">Landscape</button>
+        <button id="portrait">Portrait</button>
+      </div>
+      <div class="num-newCanvas">
+        <div class="num-width">
+          <p>Width(px):</p>
+          <input id="width" type="number" value="1587" min="0" />
+        </div>
+        <div class="num-height">
+          <p>Height(px):</p>
+          <input id="height" type="number" value="977" min="0" />
+        </div>
+      </div>
+      <div class="accept-newCanvas">
+        <button id="accept">OK</button>
+      </div>
+    </div>
+    <div class="wrap-editCanvas"></div>
+    <div class="contain-editCanvas">
+      <h1>Rotate</h1>
+      <div class="select-editCanvas">
+        <button id="degCurr">0°</button>
+        <button id="degChange">90°</button>
+      </div>
+      <div class="num-editCanvas">
+        <div class="num-deg">
+          <p>Degree(°):</p>
+          <input id="deg" type="number" value="0" min="0" />
+        </div>
+      </div>
+      <div class="accept-editCanvas">
+        <button id="acceptEdit">OK</button>
+      </div>
+    </div>
+  </body>
+</html>

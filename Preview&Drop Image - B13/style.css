@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(120deg, #43c6ac, #191654);
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
+}
+.headCt {
+  margin: 5rem auto;
+  font-size: 5rem;
+  color: #43c6ac;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px #f8ffae;
+  text-shadow: 1px 1px 20px pink;
+}
+.contain-img {
+  margin: 20rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-upload {
+  width: 62px;
+  height: 62px;
+  fill: #fff;
+}
+.text-img {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.wrap-ct {
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.drag {
+  height: 300px;
+  cursor: pointer;
+}
+.dragging {
+  border: 2px dashed #000;
+}
+input[type="file"] {
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.img {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  border: none;
+  z-index: -10;
+  outline: none;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https: //fonts.googleapis.com/css2? family = Sigmar + One & display = swap "
+      rel=" stylesheet "
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" defer src="model.js"></script>
+    <title>Movie App</title>
+  </head>
+  <body>
+    <div class="head-movie">
+      <div class="logos">
+        <h1>MOVIE APP</h1>
+        <img src="image/logoMv.png" />
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+    <div class="loading">
+      <div class="load"></div>
+    </div>
+    <div class="contain-movie">
+      <!-- <div class="wrap-movie">
+        <div data-id="57SYFRtLoLo" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/wToO8opxkGwKgSfJ1JK8tGvkG6U.jpg"
+              alt="Cruella"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>Cruella</h3>
+            <p class="vote-good">8.2</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>In 1970s London amidst the punk rock revolution, a young grifter named Estella is determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. One day, Estella’s flair for fashion catches the eye of the Baroness von Hellman, a fashion legend who is devastatingly chic and terrifyingly haute. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="2aiYxwVuZ1o" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/cMch3tiexw3FdOEeZxMWVel61Xg.jpg"
+              alt="Antlers"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>Antlers</h1>
+            <p class="vote-average">6.4</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>A small-town Oregon teacher and her brother, the local sheriff, discover a young student is harbouring a dangerous secret that could have frightening consequences</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="FqnbVhfniys" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+              alt="The Batman"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>The Batman</h3>
+            <p class="vote-good">8</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="hIR8Ar-Z4hw" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+              alt="The Avengers"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>The Avengers</h3>
+            <p class="vote-average">7.7</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="D9xlXurH77A" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/5bFK5d3mVTAvBCXi5NPWH0tYjKl.jpg"
+              alt="Space Jam: A New Legacy"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>Space Jam: A New Legacy</h3>
+            <p class="vote-average">7.1</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>When LeBron and his young son Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safe by leading Bugs, Lola Bunny and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court. It's Tunes versus Goons in the highest-stakes challenge of his life.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="440Ocw0SlKk" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg"
+              alt="Spider-Man: Homecoming"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>Spider-Man: Homecoming</h1>
+            <p class="vote-average">7.4</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="3UFWsEY8Hdc" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg"
+              alt="Raya and the Last Dragon"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>Raya and the Last Dragon</h3>
+            <p class="vote-good">8</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people.</p>
+          </div>
+        
+        </div>
+      </div>
+      <div class="wrap-movie">
+        <div data-id="VjN5_mB7KFs" class="movie">
+          <div class="img-movie">
+            <img class="poster"
+              src="https://image.tmdb.org/t/p/w1280/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg"
+              alt="Harry Potter and the Chamber of Secrets"
+            />
+          </div>
+          <div class="text-movie">
+            <h3>Harry Potter and the Chamber of Secrets</h3>
+            <p class="vote-average">7.7</p>
+          </div>
+          <div class="play-video">
+            <ion-icon name="play"></ion-icon>
+          </div>
+          <div class="overview">
+            <h1>Overview</h1>
+            <p>Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione’s magical abilities and courage.</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="video-movie"></div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" defer src="./src/app.js"></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h1>To do list</h1>
+    <div class="wrap-plans">
+      <div class="plans">
+        <h3>Plans</h3>
+        <div class="navbar-plans">
+          <div class="contain-navbars">
+            <div class="navbar-todo"></div>
+            <div class="navbar-progress"></div>
+            <div class="navbar-done"></div>
+          </div>
+        </div>
+        <div class="note-plans">
+          <div class="note-plan">
+            <div class="note-color note-todo"></div>
+            <p>Todo</p>
+            <p class="note-percent-todo">12%</p>
+          </div>
+          <div class="note-plan">
+            <div class="note-color note-progress"></div>
+            <p>In Progress</p>
+            <p class="note-percent-progress">12%</p>
+          </div>
+          <div class="note-plan">
+            <div class="note-color note-done"></div>
+            <p>Done</p>
+            <p class="note-percent-done">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-todo">
+      <div class="container-todo">
+        <div class="todo-child">
+          <div class="header-todo--child">
+            <h3>To do</h3>
+            <p>0</p>
+          </div>
+          <ul id="pos-todo" class="container container-todo--child"></ul>
+          <div class="add-icons">
+            <ion-icon id="pos-todo" name="add-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="header-progress">
+            <h3>In progress</h3>
+            <p>0</p>
+          </div>
+          <ul id="pos-progress" class="container container-progress"></ul>
+          <div class="add-icons">
+            <ion-icon id="pos-progress" name="add-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="done">
+          <div class="header-done">
+            <h3>Done</h3>
+            <p>0</p>
+          </div>
+          <ul id="pos-done" class="container container-done"></ul>
+          <div class="add-icons">
+            <ion-icon id="pos-done" name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

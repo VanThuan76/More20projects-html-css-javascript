@@ -1,0 +1,196 @@
+:root {
+  --light-color: #fff;
+  --dark-color: #000;
+  --background-color: linear-gradient(
+    180deg,
+    #191a24 17%,
+    #1e1f29 51%,
+    #2b212d 83%
+  );
+}
+.light-mode-color {
+  --light-color: #000;
+  --dark-color: #fff;
+  --background-color: linear-gradient(
+    180deg,
+    #a4a9da 17%,
+    #a2a7d4 51%,
+    #c2a3ca 83%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: var(--background-color);
+  transition: all 0.5s ease-in;
+}
+body {
+  font-family: "Red Hat Text", sans-serif;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.wrap-clock {
+  display: grid;
+  place-items: center;
+  margin-top: 10rem;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  background-image: url("./image/clock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 -15px 15px rgb(255, 255, 255, 0.1),
+    inset 0 -15px 15px rgb(255, 255, 255, 0.1), 0 -15px 15px rgb(0, 0, 0, 0.05),
+    inset 0 15px 15px rgb(0, 0, 0, 0.05);
+}
+.clock::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #e03131;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 10000;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--dark-color);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  z-index: 1000000;
+}
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+.clock .hour .hr {
+  width: 160px;
+  height: 160px;
+}
+.clock .min .mn {
+  width: 190px;
+  height: 190px;
+}
+.clock .sec .sc {
+  width: 230px;
+  height: 230px;
+}
+.hr,
+.mn,
+.sc {
+  display: flex;
+  justify-content: center;
+}
+.hr::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5rem;
+  background: #e03131;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+.mn::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 6rem;
+  background: var(--light-color);
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+.sc::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 7rem;
+  background: var(--light-color);
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+.wrap-showTime {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-color);
+}
+.timeCurr {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.wrap-mode {
+  position: relative;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light-mode {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+.dark-mode {
+  position: absolute;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+.show-mode {
+  z-index: 0;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" defer src="model.js"></script>
+    <title>SlideShow</title>
+  </head>
+  <body>
+    <div class="container-slider">
+      <ion-icon
+        class="icon-narrow nr-prev"
+        name="chevron-back-outline"
+      ></ion-icon>
+      <div class="slideShow slide-open">
+        <div class="imgShow image-show img-1"></div>
+        <p class="text-cmt--img text-show">Picture One</p>
+      </div>
+      <div class="slideShow slide-close">
+        <div class="imgShow image-hidden img-2"></div>
+        <p class="text-cmt--img text-hidden">Picture Two</p>
+      </div>
+      <div class="slideShow slide-close">
+        <div class="imgShow image-hidden img-3"></div>
+        <p class="text-cmt--img text-hidden">Picture Three</p>
+      </div>
+      <div class="slideShow slide-close">
+        <div class="imgShow image-hidden img-4"></div>
+        <p class="text-cmt--img text-hidden">Picture Four</p>
+      </div>
+      <div class="slideShow slide-close">
+        <div class="imgShow image-hidden img-5"></div>
+        <p class="text-cmt--img text-hidden">Picture Five</p>
+      </div>
+      <div class="contain-dots">
+        <ul class="dots">
+          <li class="dot dot-show"></li>
+          <li class="dot dot-hidden"></li>
+          <li class="dot dot-hidden"></li>
+          <li class="dot dot-hidden"></li>
+          <li class="dot dot-hidden"></li>
+        </ul>
+      </div>
+      <ion-icon
+        class="icon-narrow nr-next"
+        name="chevron-forward-outline"
+      ></ion-icon>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"></link>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="main.js" ></script>
+  </head>
+  <body>
+    <main id="wrap">
+      <div class="containt">
+        <div class="background-cover-card">
+          <img class="logo" src="images/logo.png" alt="Logo">
+        </div>
+        <ion-icon class="ic ic__heart" name="heart-outline"></ion-icon>
+        <ion-icon class="ic ic__cart" name="cart-outline"></ion-icon>
+        <div class="number-cart">
+          <p>0</p>
+        </div>
+        <div class="wrap__img">
+          <img class="img__size" src="images/blue.png" alt="Short Nike">
+          
+        </div>
+        <div class="content">
+            <h3>Adidas Zoom KD 12</h3>
+          </div>
+          <div class="price">
+           <span >$99.99</span>
+          </div>
+        <div class="hidden">
+          <div class="wrap__size">
+            <p>Size:</p>
+            <button class="size">6</button>
+            <button class="size">7</button>
+            <button class="size">8</button>
+            <button class="size">9</button>
+          </div>
+          <div class="wrap__color">
+            <div><p>Color:</p></div>
+
+            <div ><button dataset="blue" class="color cl-1 choose-color"></button></div>
+            <div ><button dataset="pink" class="color cl-2"></button></div>
+            <div ><button dataset="yellow" class="color cl-3"></button></div>
+          </div>
+          <div class="buy__sell">
+            <div ><button class="buy buy-now">Buy now</button></div>
+            <div ><button class="buy add-cart">Add cart</button></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

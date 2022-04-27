@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form Validator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <section class="register">
+      <div class="wrap-ct">
+        <div class="head-ct">
+          <p>Register</p>
+        </div>
+        <div class="body-ct">
+          <ul>
+            <li>
+              <input
+                class="input username"
+                type="text"
+                placeholder="Username"
+              />
+            </li>
+            <span class="span"></span>
+            <li>
+              <input
+                class="input email"
+                type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                placeholder="Email"
+              />
+            </li>
+            <span class="span span-email"></span>
+            <li>
+              <input
+                class="input password"
+                type="password"
+                placeholder="Password"
+              />
+            </li>
+            <span class="span"></span>
+            <li>
+              <input
+                class="input password2"
+                type="password"
+                placeholder="Confirm password"
+              />
+            </li>
+            <span class="span"></span>
+          </ul>
+        </div>
+        <div class="footer-ct">
+          <button class="btn">Login</button>
+        </div>
+        <div class="comment">
+          <h7
+            >Have an account?
+            <a href="#" class="btn-signup" onclick="handleSignup()"
+              >Signup</a
+            ></h7
+          >
+        </div>
+      </div>
+      <section class="signup">
+        <div class="wrap-ct">
+          <div class="head-ct">
+            <p>Signup</p>
+          </div>
+          <div class="body-ct">
+            <ul>
+              <li>
+                <input
+                  class="input username"
+                  type="text"
+                  placeholder="Username"
+                />
+              </li>
+              <span class="span-signup"></span>
+              <li>
+                <input
+                  class="input password"
+                  type="password"
+                  placeholder="Password"
+                />
+              </li>
+              <span class="span-signup"></span>
+            </ul>
+          </div>
+          <div class="footer-ct">
+            <button class="btn">Login</button>
+          </div>
+          <div class="comment">
+            <h7
+              >Not a member?
+              <a href="#" onclick="handleRegister()">Register</a></h7
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

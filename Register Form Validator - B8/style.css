@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(120deg, #00c9ff, #92fe9d);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+}
+.signup {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.show-signup {
+  opacity: 1;
+  visibility: visible;
+}
+.wrap-ct {
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.head-ct {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 30px 0;
+}
+p {
+  font-weight: bold;
+  margin: 0;
+}
+.body-ct ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 10px;
+}
+.body-ct ul li {
+  list-style: none;
+  border-bottom: 2px solid #adadad;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.body-ct ul li:active {
+  border-bottom: 2px solid #3ca7ee;
+}
+.body-ct ul li:hover {
+  border-bottom: 2px solid #3ca7ee;
+}
+
+.body-ct ul li input {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  font-size: 1.2rem;
+}
+.body-ct ul li input::placeholder {
+  font-size: 1rem;
+}
+.btn {
+  width: 340px;
+  height: 50px;
+  background-color: #3ca7ee;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #189ef8;
+}
+.footer-ct {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+.comment {
+  text-align: center;
+  margin: 20px 0;
+}
+span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: -30px;
+  color: red;
+}

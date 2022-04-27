@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("./img/welcomeWeather.jpg") no-repeat top/cover;
+}
+
+main {
+  display: flex;
+  width: 600px;
+  height: 80%;
+  background: url("./img/welcomeWeather.jpg") no-repeat top/cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contain-weather {
+  width: 90%;
+  height: 90%;
+  text-align: center;
+}
+
+.search-geolocation input {
+  background-color: #91a7ff;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px 20px 5px;
+  -webkit-border-radius: 5px 20px 5px;
+  -moz-border-radius: 5px 20px 5px;
+  -ms-border-radius: 5px 20px 5px;
+  -o-border-radius: 5px 20px 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.search-geolocation input::placeholder {
+  color: #fff;
+}
+.search-geolocation input:hover {
+  border-radius: 20px 0px 20px;
+  -webkit-border-radius: 20px 0px 20px;
+  -moz-border-radius: 20px 0px 20px;
+  -ms-border-radius: 20px 0px 20px;
+  -o-border-radius: 20px 0px 20px;
+}
+.head-weather {
+  margin-top: 5rem;
+}
+.head-weather p {
+  margin-top: 10px;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.head-weather h1 city {
+  letter-spacing: 3px;
+}
+.body-weather {
+  margin-top: 4rem;
+  width: 70%;
+  transform: translateX(20%);
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
+  -ms-transform: translateX(20%);
+  -o-transform: translateX(20%);
+}
+.body-weather .celius {
+  width: 100%;
+  font-size: 7rem;
+  background-color: #91a7ff;
+  box-shadow: 10px 10px 10px 2px rgb(0, 0, 0, 0.5);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.body-weather h1 {
+  margin-top: 5rem;
+  font-size: 2.6rem;
+}
+.footer-weather {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  padding-left: 4.5rem;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="app.js"></script>
+    <title>TikTok Click Heart</title>
+  </head>
+  <body>
+    <div class="outline-spam">
+      <p>Try it! -></p>
+      <button class="spam-heart">Spam Heart</button>
+    </div>
+    <div class="wrap-section">
+      <div class="head-section">
+        <div class="avartar">
+          <img src="image/avatar.jpg" alt="avartar" />
+        </div>
+        <div class="information">
+          <div class="head-info">
+            <p>
+              <a href="https://www.tiktok.com/@maisyleighs">maisyleighs</a
+              ><span> maisyleigh</span>
+            </p>
+          </div>
+          <div class="body-info">
+            <div class="status">
+              <p>time to get creative 🧡 late night coding sesh 🕯🖥☕️</p>
+            </div>
+            <div class="music">
+              <a
+                href="https://www.tiktok.com/music/Comfort-Chain-7014502091431463682"
+                target="blank"
+              >
+                <ion-icon name="musical-notes"></ion-icon>
+                Comfort Chain - Instupendo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="following">
+          <button>Follow</button>
+        </div>
+      </div>
+      <div class="body-section">
+        <div class="contain-vd">
+          <video src="video/videoFake.mp4" loop></video>
+          <div class="contain-report">
+            <ion-icon name="flag-outline"></ion-icon>
+            <p>Report</p>
+          </div>
+          <div class="contain-ic_interact">
+            <div class="play-pause--vd">
+              <ion-icon
+                class="icon-pause-video"
+                name="pause-outline"
+              ></ion-icon>
+              <ion-icon class="icon-play-video" name="play-outline"></ion-icon>
+            </div>
+            <div class="volume--vd">
+              <input
+                class="range-volume"
+                type="range"
+                min="1"
+                max="100"
+                value="100"
+                onchange="handlerVolume(this.value)"
+              />
+              <ion-icon
+                class="icon-audio-video"
+                name="volume-medium-outline"
+              ></ion-icon>
+              <ion-icon
+                class="icon-mute-video"
+                name="volume-mute-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-contain-heart"></div>
+        <div class="contain-el_interact">
+          <div class="contain-heart">
+            <div class="heart">
+              <ion-icon name="heart"></ion-icon>
+              <p class="number-heart">888</p>
+            </div>
+          </div>
+          <div class="contain-comment">
+            <div class="comment">
+              <ion-icon name="chatbubble-ellipses"></ion-icon>
+              <p class="number-comment">451</p>
+            </div>
+          </div>
+          <div class="contain-share">
+            <div class="share">
+              <ion-icon name="arrow-redo"></ion-icon>
+              <p class="number-share">10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

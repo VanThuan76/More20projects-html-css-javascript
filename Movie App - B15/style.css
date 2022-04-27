@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Fredoka", sans-serif;
+  /* background-image: linear-gradient(120deg, #a8c0ff, #3f2b96); */
+  background-image: url("https://wallpaperaccess.com/full/1512225.jpg"),
+    url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg");
+  background-blend-mode: difference;
+  backdrop-filter: blur(1px);
+}
+.head-movie {
+  width: 100%;
+  height: 10%;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-movie .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos img {
+  width: 8rem;
+  height: 5rem;
+}
+.logos h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
+  font-family: "Sigmar One", cursive;
+}
+.head-movie input {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.contain-movie {
+  max-width: 100%;
+  height: 100%;
+  margin: 2rem 0 0 0%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow-y: hidden;
+}
+
+.wrap-movie {
+  position: relative;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #15aabf;
+  width: 400px;
+  height: 40rem;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.overview {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  background-color: #fff;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+.overview h1 {
+  margin-bottom: 1rem;
+}
+.overview p {
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  overflow-y: hidden;
+}
+.wrap-movie:hover .overview {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+.play-video {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s linear;
+}
+
+.play-video ion-icon {
+  color: #fff;
+  width: 5rem;
+  height: 5rem;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+.movie {
+  overflow-y: hidden;
+}
+.img-movie {
+  text-align: center;
+  overflow-y: hidden;
+}
+.poster {
+  display: block;
+  width: 100%;
+  height: 55vh;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+.text-movie {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+.text-movie h3 {
+  font-size: 1.4rem;
+}
+.text-movie p {
+  width: 2rem;
+  height: 2rem;
+  padding-top: 10%;
+  text-align: center;
+  background-color: #0c8599;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: bold;
+}
+.vote-good {
+  color: #51cf66;
+}
+.vote-average {
+  color: #f59f00;
+}
+.vote-bad {
+  color: #f03e3e;
+}
+.video-movie {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+.open-video {
+  opacity: 1;
+  visibility: visible;
+}
+.open-ic--play-vd {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.contain-video {
+  position: absolute;
+  width: 80%;
+  height: 70rem;
+  overflow-y: hidden;
+  margin: 10rem 0 10% 0;
+  transform: translateX(15%);
+  -webkit-transform: translateX(15%);
+  -moz-transform: translateX(15%);
+  -ms-transform: translateX(15%);
+  -o-transform: translateX(15%);
+}
+.background-video--wait {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.contain-section--video {
+  position: relative;
+  width: 100%;
+  height: 70rem;
+  overflow-y: hidden;
+}
+.background-video {
+  position: absolute;
+  background-image: url("https://image.tmdb.org/t/p/w1280/rcUcYzGGicDvhDs58uM44tJKB9F.jpg");
+  background-position: center;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.video {
+  position: absolute;
+  width: 100%;
+  height: 50rem;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+.home-back {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+}
+.home-back h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.home-back ion-icon {
+  font-size: 5rem;
+}
+.home-back:hover {
+  background-color: rgb(231, 231, 231);
+}
+.loading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  background-color: #f1f2f3;
+  opacity: 0;
+  visibility: hidden;
+}
+.load {
+  width: 100%;
+  height: 60rem;
+  background-image: url("./image/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.open-load {
+  opacity: 1;
+  visibility: visible;
+}

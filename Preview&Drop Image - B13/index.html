@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview&Drop Image</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="headCt">PREVIEW & DROP IMAGE</div>
+    <section class="contain-img">
+      <div class="wrap-ct wrap--input">
+        <input accept="image/png, image/jpeg" type="file" class="input" />
+        <div class="content">
+          <ion-icon class="icon-upload" name="cloud-upload"></ion-icon>
+          <p class="text-img">Upload to preview image</p>
+        </div>
+        <img class="img" />
+      </div>
+      <div class="wrap-ct drag"></div>
+      <div class="wrap-ct drag"></div>
+    </section>
+  </body>
+</html>

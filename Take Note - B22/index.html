@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&family=Rubik:wght@300;400&family=Tapestry&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" defer src="main.js"></script>
+    <title>Take Note App</title>
+  </head>
+  <body>
+    <!-- ///HEAD -->
+    <div class="wrap-header-take--note">
+      <div class="header-take--note">
+        <div class="div-empty"></div>
+        <div class="wrap-search-take--note">
+          <div class="search-take--note">
+            <ion-icon name="search-outline"></ion-icon>
+            <input id="search" type="text" placeholder="Search..." />
+          </div>
+          <div class="help-take--note">
+            <ion-icon name="help-circle-outline"></ion-icon>
+          </div>
+          <div class="contain-content--help">
+            <ul>
+              <li>- None Autosave</li>
+              <li>- Double Click To Remove</li>
+              <li>- Search By Tags</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///BODY -->
+    <div class="wrap-body-take--note">
+      <!-- ///CONTAIN-NOTE -->
+      <div class="wrap-contain-take--note">
+        <div class="contain-take--note">
+          <div class="head-take--note">
+            <h2>Last Update</h3>
+            <div class="add-note">
+              <ion-icon name="add-outline"></ion-icon>
+              <p>New Note</p>
+            </div>
+          </div>
+          <div class="body-take--note">
+          </div>
+        </div>
+      </div>
+      <!-- ///SHOW-NOTE -->
+      <div class="wrap-show-take--note">
+        <div class="contain-show-take--note">
+          <input id="title" type="text" placeholder="Enter a title here..." minlength="3" maxlength="16">
+          <div class="wrap-infor"></div>
+          <textarea  id="comment" placeholder="Comment note right here..."></textarea>
+          <div class="btn-done-take--note">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="import-author-take--note">
+        <div class="contain-import-author">
+          <p>Your Name:</p>
+          <input id="author" type="text">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
