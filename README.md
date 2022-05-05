@@ -4,7 +4,7 @@
 
 # More 20 Project Interesting<br> Training For Beginner Learning!
 
-\*[Course Link](https://trainingmore20projects.netlify.app/)
+![Course Link](https://trainingmore20projects.netlify.app/)
 
 | #   | Project                                                                                                                                 | Live Demo                                                        |
 | :-- | :-------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
