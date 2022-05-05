@@ -4,6 +4,8 @@
 
 # More 20 Project Interesting<br> Training For Beginner Learning!
 
+\*[Course Link](https://trainingmore20projects.netlify.app/)
+
 | #   | Project                                                                                                                                 | Live Demo                                                        |
 | :-- | :-------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
 | 01  | [Product Card](https://github.com/VanThuan76/Challenge_Nodemy-Project/tree/master/Product%20Card%20-%20B1)                              | [Live Demo](https://productcardthuanhip.netlify.app/)            |
@@ -29,4 +31,4 @@
 | 21  | [Work With Canvas](https://github.com/VanThuan76/Challenge_Nodemy-Project/tree/master/Work%20With%20Canvas%20-%20B21)                   | [Live Demo](https://painttoolthuanhip.netlify.app/)              |
 | 22  | [Take Note](https://github.com/VanThuan76/Challenge_Nodemy-Project/tree/master/Take%20Note%20-%20B22)                                   | [Live Demo](https://takenotethuanhip.netlify.app/)               |
 
-✔️Updated 28/04/2022
+✔️Updated 05/05/2022
